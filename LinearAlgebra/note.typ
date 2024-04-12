@@ -200,6 +200,37 @@ $A^(-1) A = I$
 
 #pagebreak()
 
+= Determinant
+
+Determinant
+- $2 times 2 "matrix:" A = mat(a_11,a_12;a_21,a_22) -> |A| = a_11a_22 - a_12a_21$ 
+- $3 times 3 "matrix: submatrix" A_(i j) <- " exclude i-th row, j-th column"$
+#image("assets/2024-04-12-13-38-58.png")
+- $det A = Sigma_(j=1)^n (-1)^(1+j)a_(1 j)det A_(1 j)$
+- 일반화: $det A = |A| = Delta =  Sigma_(j=1)^n (-1)^(i+j)a_(i j)det A_(i j) = Sigma_(j=1)^n a_(i j)C_(i j) $
+- i 의 값이 달라도 det A의 값은 똑같음.
+- $n times n "matrix" ,_ "submatrix" A_(i j) (n - 1 times n - 1) $
+- $det A != 0 -> "Invertible matrix"$
+- Cofactor: $C_(i j) = (-1)^(i+j)det A_(i j)$
+- If $A "is" n times n "matrix, " det A "=  product of entries of main diagonals of " A$
+- $-n p <= det A <= n p [n times n "matrix", p = "abs(n largest elements in matrix" A)]$
+
+#pagebreak()
+
+= Properties of Determinants
+
+== Theorem 3
+- $A~U~I_n$ (If $A$ is invertible)
+- Replacement: $A -> B: det A = det B$
+- Interchange: $A <->B : det B = - det A$
+- Scaling: $det B = k det A$
+- zero column/row $-> det A = 0$ 
+- $"Col 1" = k"Col b" -> det A = 0$
+- $det(k A) = k^n det A$
+
+
+#pagebreak()
+
 = Questions
 1    선형 방정식, 벡터 방정식, 행렬 방정식의 차이점을 설명하고, 각각의 예시를 들어주세요.
 
@@ -217,6 +248,8 @@ $A^(-1) A = I$
 
 8    $RR^n$ 공간의 부분공간(subspace)에 대해 설명하고, Col A와 Nul A의 의미를 각각 설명해주세요.
 
+
+#pagebreak()
 
 #let mathbf(text) = text
 #let bm(body) = mathbf(body)

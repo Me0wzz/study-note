@@ -228,6 +228,32 @@ Determinant
 - $"Col 1" = k"Col b" -> det A = 0$
 - $det(k A) = k^n det A$
 
+- $det A = (-1)^("count of interchange") det U$
+- $det U = U_(11)+U_(22)+...+U_(n n)$
+-  if A = invertible $-> det U != 0$
+-  $det A = 0 ->$ rows/columns of A is linearly dependent
+-
+= Column Operations
+- $det A^T = det A$
+- $det A B = det A det B$
+- $det(A+B) != det A + det B$
+
+#pagebreak()
+
+= Cramer's rule
+- $A_i (b) = mat(delim:"[",a_1,a_2,...,b,...a_n)$
+
+- $x_i = (det A_i (b)) / (det A) (i=1,2,3,...,n)$
+- $A I_i (x) = A[e_1...x...e_n] = [a_1...b...a_n] = A_i (b)$
+- $(det A)(det I_i (x)) = det(A_i (b))$
+
+= A Fomula for $A^(-1)$
+
+- $A^(-1) = (1) / (det A) "adj" A$ 
+- adjugate matrix is transpose of matrix of cofactors
+
+
+
 
 #pagebreak()
 
